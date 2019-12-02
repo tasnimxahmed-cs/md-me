@@ -1,6 +1,8 @@
 body
 {
     background-color: #593196;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .lightText
 {
@@ -9,4 +11,15 @@ body
 .darkText
 {
     color: #593196 !important;
+}
+#leftSec
+{
+    display: inline-block;
+}
+#rightSec
+{
+    position: relative;
+    display: inline;
+    top: -27.5rem;
+    left: 22.1rem;
 }

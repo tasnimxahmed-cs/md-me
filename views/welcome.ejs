@@ -1,12 +1,86 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      
+<br><br> 
+<div id="leftSec">
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">About Us</div>
+    <div class="card-body">
+      <h4 class="card-title">md&me</h4>
+      <p class="card-text">md&me gives you direct access to contacting your doctor; a more efficient way to stay healthy.</p>
     </div>
-    <div class="row">
-      <div class="col-lg-6">
+  </div>
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">Login or Register</div>
+    <div class="card-body">
+      <h4 class="card-title">Get Started</h4>
+      <p class="card-text">Get started by logging into your account on the right. No account? No problem. Click <a href="/users/register">here</a> to get started today.</p>
+    </div>
+  </div>
+</div>
+<div id="rightSec">
+  <div class="row mt-5">
 
+    <div class="col-md-6 m-auto">
+  
+      <div class="card card-body">
+  
+        <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+  
+        <%- include ('./partials/messages.ejs') %>
+  
+        <form action="/users/login" method="POST">
+  
+          <div class="form-group">
+  
+            <label for="email">Email</label>
+  
+            <input
+  
+              type="email"
+  
+              id="email"
+  
+              name="email"
+  
+              class="form-control"
+  
+              placeholder="Enter Email"
+  
+            />
+  
+          </div>
+  
+          <div class="form-group">
+  
+            <label for="password">Password</label>
+  
+            <input
+  
+              type="password"
+  
+              id="password"
+  
+              name="password"
+  
+              class="form-control"
+  
+              placeholder="Enter Password"
+  
+            />
+  
+          </div>
+  
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+  
+        </form>
+  
+        <p class="lead mt-4">
+  
+          No Account? <a href="/users/register">Register</a>
+  
+        </p>
+  
       </div>
+  
     </div>
+  
   </div>
 </div>
