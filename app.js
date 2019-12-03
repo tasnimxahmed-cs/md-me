@@ -37,7 +37,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //Conect Flash
-  app.use(flash());
+app.use(flash());
 
 //Global Vars
 app.use((req, res, next) => {
